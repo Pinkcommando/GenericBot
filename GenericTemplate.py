@@ -8,7 +8,7 @@ class BotTemplate(GenericBot):
 	async def onStart(self):
 		self.name = "BotName" 					# Bot name
 		self.startingZone = None  				# Starting zone (ex. "Location/a/b/c")
-		self.startingPosition = (0, 0, 0)		# Starting position TODO: None -> don't teleport 
+		self.startingPosition = None				# Starting position
 		self.operations = self.operation()
 		await super().onStart()
 		await mark(self)
